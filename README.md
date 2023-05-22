@@ -5,10 +5,30 @@ A workflow for utilizing unique molecular identifiers (UMIs) for error-correctio
 **Table of contents**
 - [Installation](#installation)
 - [Quick start](#quick-start)
-- [Example analysis](#example-analysis)
 - [Usage](#usage)
 
-**Citation**  
+**Citations**  
 [bioRxiv paper]
 
 Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel McDonald, Qiyun Zhu, Rob Knight, and Mads Albertsen. (2021) High-accuracy long-read amplicon sequences using unique molecular identifiers with Nanopore or PacBio sequencing. Nat Methods 18, 165–169 (2021). https://doi.org/10.1038/s41592-020-01041-y
+
+## Installation
+1. Install the `longread_umi` package: 
+
+2. Determine the location of the package contents. For instance, if `longread_umi` was installed via conda, type: 
+   ```
+   conda activate longread_umi
+   echo "$CONDA_PREFIX/longread_umi"
+   conda deactivate
+   ``` 
+
+2. Download the `ssUMI` scripts: 
+
+`git clone https://github.com/ZielsLab/ssUMI.git`
+
+3. Replace the `longread_umi` scripts with the `ssUMI` scripts
+    ```
+    mv path/to/longread_umi/scripts path/to/longread_umi/scripts_old
+    mv path/to/ssUMI/scripts path/to/longread_umi/
+    ```
+
