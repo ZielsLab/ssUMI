@@ -26,7 +26,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
 
 `git clone https://github.com/ZielsLab/ssUMI.git`
 
-4. Replace the `longread_umi` scripts with the `ssUMI` scripts
+4. Replace the `longread_umi` scripts folder with the new (`ssUMI`) scripts folder
     ```
     mv path/to/longread_umi/scripts path/to/longread_umi/scripts_old
     mv path/to/ssUMI/scripts path/to/longread_umi/
