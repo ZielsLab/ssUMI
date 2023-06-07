@@ -31,11 +31,21 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
     mv path/to/longread_umi/scripts path/to/longread_umi/scripts_old
     mv path/to/ssUMI/scripts path/to/longread_umi/
     ```
- ## Quick start
+5. Download VSEARCH (from here)
+
+
+7. Install medaka via a virtual environment:
+   ```
+   install commands
+   ```
+8. Edit the file `scripts/dependencies.sh`
+
+
  
  ### Test data
+ Make .fastq file with a few reads for testing. Give expected output. 
  
  
  ## Usage
-
+Give ssUMI commands
 
