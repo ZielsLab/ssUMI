@@ -31,19 +31,45 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
     mv path/to/longread_umi/scripts path/to/longread_umi/scripts_old
     mv path/to/ssUMI/scripts path/to/longread_umi/
     ```
-5. Download VSEARCH (from here)
+5. Download `VSEARCH`[https://github.com/torognes/vsearch]
 
 
-7. Install medaka via a virtual environment:
+7. Install `medaka` via a virtual environment:
+(see https://github.com/nanoporetech/medaka for details) 
+
    ```
-   install commands
+   cd /path/to/medaka
+   
+   virtualenv medaka --python=python3 
+   sourde medaka/bin/activate
+   pip install --upgrade pip
+   pip install medaka
    ```
+   
 8. Edit the file `scripts/dependencies.sh`
+   8.1 Replace part of this line:
+   ```
+   export VSEARCH="/path/to/vsearch"
+   ```
+   with your file path to your `VSEARCH` installation.
 
-
+   8.2 Replace part of this line:
+   ```
+   export USEARCH="/path/to/usearch"
+   
+   ```
+   with the path to your `USEARCH` environment (installed as part of `longread_umi`)
+   
+   8.3 Replace part of this line:
+   ```
+   export MEDAKA_ENV_START="source /path/to/medaka/bin/activate"
+   
+   ```
+   with the paths to your `medaka` virtual environment (e.g. leave the `source activate` part).
+   
  
+   
  ### Test data
- Make .fastq file with a few reads for testing. Give expected output. 
  
  
  ## Usage
