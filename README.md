@@ -70,10 +70,8 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
    ```
    with the paths to your `medaka` virtual environment (e.g. leave the `source activate` part).
    
- 
-   
- ### Test data
- 
+    ### Test data
+    
  
  ## Usage
 ```
@@ -112,3 +110,11 @@ where:
     -T  Number of medaka jobs to start. Threads pr. job is threads/jobs.
         [Default = 1].
 ```
+
+An example usage for V1-V9 16S rRNA gene amplicons generated with 8F / 1391R UMI primers:
+
+```
+give commands
+```
+
+
