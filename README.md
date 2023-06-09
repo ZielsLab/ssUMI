@@ -31,7 +31,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
     mv path/to/longread_umi/scripts path/to/longread_umi/scripts_old
     mv path/to/ssUMI/scripts path/to/longread_umi/
     ```
-5. Download `VSEARCH`[https://github.com/torognes/vsearch]
+5. Download `VSEARCH`(https://github.com/torognes/vsearch)
 
 
 7. Install `medaka` via a virtual environment:
