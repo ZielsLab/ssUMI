@@ -76,5 +76,39 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
  
  
  ## Usage
-Give ssUMI commands
+```
+-- longread_umi ssumi_fast: run the ssUMI pipeline for consensus polishing of UMI-tagged 16S rRNA gene amplicons in 'fast' mode, with just (-c) rounds of Racon polishing (recommended number of rounds = 3).
 
+-- longread_umi ssumi_hac: run the ssUMI pipeline for consensus polishing of UMI-tagged 16S rRNA gene amplicons in 'high accuracy' mode, with just (-c) rounds of Racon polishing (recommended value = 3), then (-p) rounds of Medaka (recommended value = 2), followed by a final round of Racon polishing. 
+   
+usage: 
+ssumi_hac [-h]  (-d file -v value -o dir -s value) 
+(-e value -m value -M value -f string -F string -r string -R string )
+( -c value -p value -n value -u dir -t value -T value ) 
+
+ssumi_fast [-h] (-d file -v value -o dir -s value) 
+(-e value -m value -M value -f string -F string -r string -R string )
+( -c value -n value -u dir -t value )
+
+where:
+    -h  Show this help text.
+    -d  Single file containing raw Nanopore data in fastq format.
+    -v  Minimum read coverage for using UMI consensus sequences for 
+        variant calling.
+    -o  Output directory.
+    -s  Check start of read up to s bp for UMIs.
+    -e  Check end of read up to f bp for UMIs.
+    -m  Minimum read length.
+    -M  Maximum read length.
+    -f  Forward adaptor sequence. 
+    -F  Forward primer sequence.
+    -r  Reverse adaptor sequence.
+    -R  Reverse primer sequence.
+    -c  Number of iterative rounds of consensus calling with Racon.
+    -p  Number of iterative rounds of consensus calling with Medaka.
+    -q  Medaka model used for polishing. r941_min_high, r10_min_high etc.
+    -u  Directory with UMI binned reads.
+    -t  Number of threads to use.
+    -T  Number of medaka jobs to start. Threads pr. job is threads/jobs.
+        [Default = 1].
+```
