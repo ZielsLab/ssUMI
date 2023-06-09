@@ -47,18 +47,21 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
    ```
    
 8. Edit the file `scripts/dependencies.sh`
+   
    8.1 Replace part of this line:
    ```
    export VSEARCH="/path/to/vsearch"
    ```
    with your file path to your `VSEARCH` installation.
 
+   
    8.2 Replace part of this line:
    ```
    export USEARCH="/path/to/usearch"
    
    ```
    with the path to your `USEARCH` environment (installed as part of `longread_umi`)
+   
    
    8.3 Replace part of this line:
    ```
