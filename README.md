@@ -58,7 +58,6 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
    Then, replace part of this line:
    ```
    export USEARCH="/path/to/usearch"
-   
    ```
    with the path to your `USEARCH` environment (installed as part of `longread_umi`)
    
@@ -66,7 +65,6 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
    Finally, replace part of this line:
    ```
    export MEDAKA_ENV_START="source /path/to/medaka/bin/activate"
-   
    ```
    with the paths to your `medaka` virtual environment (e.g. leave the `source activate` part).
    
