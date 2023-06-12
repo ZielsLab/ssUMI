@@ -108,11 +108,30 @@ where:
     -T  Number of medaka jobs to start. Threads pr. job is threads/jobs.
         [Default = 1].
 ```
+### Example Usage
+Below is an example usage for V1-V9 16S rRNA gene amplicons generated with UMI-tagged 8F / 1391R UMI primers and an ONT R.10.4 flowcell. 
 
-An example usage for V1-V9 16S rRNA gene amplicons generated with 8F / 1391R UMI primers:
+The raw ONT reads would be given by `INFILE` (e.g. `INFILE="path/to/raw/reads"`), the desired output folder specified by `OUTDIR` (e.g. `OUTDIR="path/to/output"`), and the number of threads by `THREADS` (e.g. `THREADS=16`). 
 
 ```
-give commands
+longread_umi ssumi_hac \
+  -d ${INFILE} \
+  -v 3 \
+  -o ${OUTDIR} \
+  -s 200 \
+  -e 200 \
+  -E 0.1 \
+  -m 1200 \
+  -M 2000 \
+  -f GTATCGTGTAGAGACTGCGTAGG \
+  -F AGRGTTYGATYMTGGCTCAG \
+  -r AGTGATCGAGTCAGTGCGAGTG \
+  -R GACGGGCGGTGWGTRCA \
+  -c 3 \
+  -p 2 \
+  -q r104_e81_sup_g5015 \
+  -t ${THREADS} \
+  -T ${THREADS}
 ```
 
 
