@@ -73,16 +73,16 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
  
  ## Usage
 
-`-- longread_umi ssumi_fast: run the ssUMI pipeline for consensus polishing of UMI-tagged 16S rRNA gene amplicons in 'fast' mode, with just (-c) rounds of Racon polishing (recommended number of rounds = 3).`
+`-- longread_umi ssumi_rapid: run the ssUMI pipeline for consensus polishing of UMI-tagged 16S rRNA gene amplicons in 'rapid' mode, with just (-c) rounds of Racon polishing (recommended number of rounds = 3).`
 
-`-- longread_umi ssumi_hac: run the ssUMI pipeline for consensus polishing of UMI-tagged 16S rRNA gene amplicons in 'high accuracy' mode, with just (-c) rounds of Racon polishing (recommended value = 3), then (-p) rounds of Medaka (recommended value = 2), followed by a final round of Racon polishing.` 
+`-- longread_umi ssumi_std: run the ssUMI pipeline for consensus polishing of UMI-tagged 16S rRNA gene amplicons in 'standard' mode, with just (-c) rounds of Racon polishing (recommended value = 3), then (-p) rounds of Medaka (recommended value = 2), followed by a final round of Racon polishing.` 
 ```   
 usage: 
-ssumi_hac [-h]  (-d file -v value -o dir -s value) 
+ssumi_std [-h]  (-d file -v value -o dir -s value) 
 (-e value -m value -M value -f string -F string -r string -R string )
 ( -c value -p value -n value -u dir -t value -T value ) 
 
-ssumi_fast [-h] (-d file -v value -o dir -s value) 
+ssumi_rapid [-h] (-d file -v value -o dir -s value) 
 (-e value -m value -M value -f string -F string -r string -R string )
 ( -c value -n value -u dir -t value )
 
@@ -114,7 +114,7 @@ Below is an example usage for V1-V9 16S rRNA gene amplicons generated with UMI-t
 The raw ONT reads would be given by `INFILE` (e.g. `INFILE="path/to/raw/reads"`), the desired output folder specified by `OUTDIR` (e.g. `OUTDIR="path/to/output"`), and the number of threads by `THREADS` (e.g. `THREADS=16`). 
 
 ```
-longread_umi ssumi_hac \
+longread_umi ssumi_std \
   -d ${INFILE} \
   -v 3 \
   -o ${OUTDIR} \
