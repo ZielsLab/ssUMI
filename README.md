@@ -8,7 +8,8 @@ A workflow for utilizing unique molecular identifiers (UMIs) for error-correctio
 - [Usage](#usage)
 
 **Citations**  
-[bioRxiv paper]
+Lin, Xuan, Kate Waring, John Tyson, Ryan M. Ziels. (2023) High-accuracy meets high-throughput for microbiome profiling with near full-length 16S rRNA amplicon sequencing on the Nanopore platform. bioRxiv. 
+
 
 Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel McDonald, Qiyun Zhu, Rob Knight, and Mads Albertsen. (2021) High-accuracy long-read amplicon sequences using unique molecular identifiers with Nanopore or PacBio sequencing. Nat Methods 18, 165–169 (2021). https://doi.org/10.1038/s41592-020-01041-y
 
