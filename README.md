@@ -70,6 +70,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
    with the paths to your `medaka` virtual environment (e.g. leave the `source activate` part).
    
     ### Test data
+    It is highly recommended that users test their installation and `ssUMI` scripts using the test data found in the `test_data` folder within the cloned `ssUMI` repository. Code for running the `ssUMI` pipeline on `test_data.fastq` is given below in [Usage](#usage). The expected output is a fasta file containing 4 UMI-based consensus sequences. 
     
  
  ## Usage
