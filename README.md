@@ -72,11 +72,11 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
     
  
  ## Usage
-```
--- longread_umi ssumi_fast: run the ssUMI pipeline for consensus polishing of UMI-tagged 16S rRNA gene amplicons in 'fast' mode, with just (-c) rounds of Racon polishing (recommended number of rounds = 3).
 
--- longread_umi ssumi_hac: run the ssUMI pipeline for consensus polishing of UMI-tagged 16S rRNA gene amplicons in 'high accuracy' mode, with just (-c) rounds of Racon polishing (recommended value = 3), then (-p) rounds of Medaka (recommended value = 2), followed by a final round of Racon polishing. 
-   
+`-- longread_umi ssumi_fast: run the ssUMI pipeline for consensus polishing of UMI-tagged 16S rRNA gene amplicons in 'fast' mode, with just (-c) rounds of Racon polishing (recommended number of rounds = 3).`
+
+`-- longread_umi ssumi_hac: run the ssUMI pipeline for consensus polishing of UMI-tagged 16S rRNA gene amplicons in 'high accuracy' mode, with just (-c) rounds of Racon polishing (recommended value = 3), then (-p) rounds of Medaka (recommended value = 2), followed by a final round of Racon polishing.` 
+```   
 usage: 
 ssumi_hac [-h]  (-d file -v value -o dir -s value) 
 (-e value -m value -M value -f string -F string -r string -R string )
