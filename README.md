@@ -112,9 +112,7 @@ where:
         [Default = 1].
 ```
 ### Example Usage
-Below is an example usage for V1-V9 16S rRNA gene amplicons generated with UMI-tagged 8F / 1391R UMI primers and an ONT R.10.4 flowcell. 
-
-The raw ONT reads would be given by `INFILE` (e.g. `INFILE="path/to/raw/reads"`), the desired output folder specified by `OUTDIR` (e.g. `OUTDIR="path/to/output"`), and the number of threads by `THREADS` (e.g. `THREADS=16`). 
+Below is an example usage for V1-V9 16S rRNA gene amplicons generated with UMI-tagged 8F / 1391R UMI primers and an ONT R.10.4 flowcell and basecalled with `guppy v6.3.8`. The raw ONT reads would be given by `INFILE` (e.g. `INFILE="path/to/raw/reads"`), the desired output folder specified by `OUTDIR` (e.g. `OUTDIR="path/to/output"`), and the number of threads by `THREADS` (e.g. `THREADS=16`). 
 
 ```
 longread_umi ssumi_std \
@@ -132,7 +130,7 @@ longread_umi ssumi_std \
   -R GACGGGCGGTGWGTRCA \
   -c 3 \
   -p 2 \
-  -q r104_e81_sup_g5015 \
+  -q r104_e81_sup_g610 \
   -t ${THREADS} \
   -T ${THREADS}
 ```
