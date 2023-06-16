@@ -19,7 +19,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
 2. Determine the location of the package contents. For instance, if `longread_umi` was installed via conda, type: 
    ```
    conda activate longread_umi
-   echo "$CONDA_PREFIX/longread_umi"
+   script_path="`echo "$CONDA_PREFIX/longread_umi"`"
    conda deactivate
    ``` 
 
@@ -29,8 +29,8 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
 
 4. Replace the `longread_umi` scripts folder with the new (`ssUMI`) scripts folder
     ```
-    mv path/to/longread_umi/scripts path/to/longread_umi/scripts_old
-    mv path/to/ssUMI/scripts path/to/longread_umi
+    mv $script_path/scripts $script_path/scripts_old
+    mv path/to/ssUMI/scripts $script_path/
     ```
 5. Download [`VSEARCH`](https://github.com/torognes/vsearch)
 
@@ -47,7 +47,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
    pip install medaka
    ```
    
-8. Edit the file `scripts/dependencies.sh`
+8. Edit the file `$script_path/scripts/dependencies.sh`
    
    Replace part of this line:
    ```
