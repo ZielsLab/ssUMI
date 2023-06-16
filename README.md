@@ -36,7 +36,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
 5. Download [`VSEARCH`](https://github.com/torognes/vsearch)
 
 
-7. Install [`medaka`](https://github.com/nanoporetech/medaka) via a virtual environment, and download all medaka model files:
+7. Install [`medaka`](https://github.com/nanoporetech/medaka) via a virtual environment, and add new medaka model files:
 (see https://github.com/nanoporetech/medaka for details) 
 
    ```
@@ -46,11 +46,13 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
    sourde medaka/bin/activate
    pip install --upgrade pip
    pip install medaka
-   medaka tools download_models
    deactivate
    ```
+
+   Medaka model files can be downloaded from [`medaka models`](https://github.com/nanoporetech/medaka/tree/master/medaka/data). For example, for nanopore reads generated with kit V12 and R10.4 flowcells, basecalled with guppy v6.1.0 +, in super high accuracy mode, use medaka model `r104_e81_sup_g610_model.tar.gz`. Copy the downloaded model file to `/path/to/medaka/lib/python3.6/site-packages/medaka/data`
+
    
-8. Edit the file `$script_path/scripts/dependencies.sh`
+9. Edit the file `$script_path/scripts/dependencies.sh`
    
    Replace part of this line:
    ```
