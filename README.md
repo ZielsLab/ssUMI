@@ -31,6 +31,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
     ```
     mv $script_path/scripts $script_path/scripts_old
     mv path/to/ssUMI/scripts $script_path/
+    chmod +x $script_path/scripts/*
     ```
 5. Download [`VSEARCH`](https://github.com/torognes/vsearch)
 
