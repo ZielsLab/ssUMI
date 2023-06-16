@@ -36,7 +36,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
 5. Download [`VSEARCH`](https://github.com/torognes/vsearch)
 
 
-7. Install [`medaka`](https://github.com/nanoporetech/medaka) via a virtual environment:
+7. Install [`medaka`](https://github.com/nanoporetech/medaka) via a virtual environment, and download all medaka model files:
 (see https://github.com/nanoporetech/medaka for details) 
 
    ```
@@ -46,6 +46,8 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
    sourde medaka/bin/activate
    pip install --upgrade pip
    pip install medaka
+   medaka tools download_models
+   deactivate
    ```
    
 8. Edit the file `$script_path/scripts/dependencies.sh`
