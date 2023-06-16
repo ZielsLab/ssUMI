@@ -11,7 +11,7 @@
 ### Description ----------------------------------------------------------------
 
 USAGE="
--- longread_umi ssUMI_rapid: Generate UMI consensus sequences of full-length 16S rRNA from Q20+ Nanopore data in rapid mode
+-- longread_umi ssumi_rapid: Generate UMI consensus sequences of full-length 16S rRNA from Q20+ Nanopore data in rapid mode
    
 usage: $(basename "$0" .sh) [-h] [-w string] (-d file -v value -o dir -s value) 
 (-e value -m value -M value -f string -F string -r string -R string )
