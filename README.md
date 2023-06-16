@@ -29,7 +29,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
 
 4. Replace the `longread_umi` scripts folder with the new (`ssUMI`) scripts folder
     ```
-    mv path/to/longread_umi/longread_umi/scripts path/to/longread_umi/longread_umi/scripts_old
+    mv path/to/longread_umi/scripts path/to/longread_umi/scripts_old
     mv path/to/ssUMI/scripts path/to/longread_umi/longread_umi
     ```
 5. Download [`VSEARCH`](https://github.com/torognes/vsearch)
