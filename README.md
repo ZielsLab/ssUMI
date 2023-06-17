@@ -42,7 +42,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
    ```
    cd /path/to/medaka
    
-   virtualenv medaka --python=python3 
+   python3 -m venv medaka --prompt "medaka"
    sourde medaka/bin/activate
    pip install --upgrade pip
    pip install medaka
