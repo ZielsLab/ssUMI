@@ -23,7 +23,7 @@ export BWA=bwa
 export USEARCH="/path/to/usearch" #change to your USEARCH path
 export MEDAKA_ENV_START="source /path/to/medaka/bin/activate" #change to your medaka venv path
 export MEDAKA_ENV_STOP="deactivate"
-export VSEARCH="/path/to/vsearch" #change to your VSEARCH  path
+export VSEARCH="/path/to/vsearch" #change to your VSEARCH path
 
 # longread_umi paths
 #export REF_CURATED=$LONGREAD_UMI_PATH/scripts/zymo-ref-uniq_2019-10-28.fa
