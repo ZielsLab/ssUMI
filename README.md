@@ -43,7 +43,7 @@ Karst, Søren M., Ryan M. Ziels, Rasmus H. Kirkegaard, Emil A. Sørensen, Daniel
    cd /path/to/medaka
    
    python3 -m venv medaka --prompt "medaka"
-   sourde medaka/bin/activate
+   source medaka/bin/activate
    pip install --upgrade pip
    pip install medaka
    medaka tools download_models
