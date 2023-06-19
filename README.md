@@ -1,6 +1,6 @@
 # ssUMI
 
-A workflow for utilizing unique molecular identifiers (UMIs) for error-correction of small subunit (SSU) rRNA (e.g. 16S rRNA) gene amplicons on the Nanopore platform. This workflow is a branch of the [`longread_umi` pipeline](https://github.com/SorenKarst/longread_umi), and has been taylored for 16S rRNA gene sequencing with newer Nanopore sequencing chemistry (<= R.10.4).
+A workflow for utilizing unique molecular identifiers (UMIs) for error-correction of small subunit (SSU) rRNA (e.g. 16S rRNA) gene amplicons on the Nanopore platform. This workflow is a branch of the [`longread_umi` pipeline](https://github.com/SorenKarst/longread_umi), and has been taylored for 16S rRNA gene sequencing with newer Nanopore sequencing chemistry (>= R.10.4).
 
 **Table of contents**
 - [Installation](#installation)
