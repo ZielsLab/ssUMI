@@ -762,6 +762,6 @@ cut -d " " -f1 $BINNING_DIR/umi_bin_map.txt |\
 cat $BINNING_DIR/umi_binning_stats.txt |\
  awk -F" " -v COV="$UMI_COVERAGE_MIN" '$2>=COV' |\
  awk -F" " '$17=="ok"' | cut -d' ' -f 1 | cut -d';' -f1 | sed 's/$/bins/'|\
- tail -n +2 > $BINNING_DIR/pass_bins.txt
+ tail -n +1 > $BINNING_DIR/pass_bins.txt
 
 
