@@ -219,7 +219,7 @@ longread_umi polish_racon \
     -o $CON_DIR2                          `# Output folder`\
     -t $THREADS                          `# Number of threads`
 #Tidy up
-tar -czvf ${CON_DIR2}/mapping.tar.gz ${CON_DIR2}/umi*bins --remove-files
+tar -czvf ${CON_DIR2}/mapping.tar.gz >${CON_DIR2}/mapping/umi*bins --remove-files
 
 # Trim UMI consensus data
 longread_umi trim_amplicon \
